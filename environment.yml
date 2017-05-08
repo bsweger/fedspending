@@ -1,0 +1,7 @@
+name: fedspending-scripts
+dependencies:
+- flak8=3.3.0
+- jupyter=1.1.0
+- python=3.6
+- pandas=0.19.2
+- requests=2.13.0
