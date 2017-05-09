@@ -68,7 +68,7 @@ def process_data(usa_response, df):
 
 # specify the endpoint and request body for the initial API call
 df = pd.DataFrame()
-env = 'https://spending-api.us/api/v1/'
+env = 'https://api.usaspending.gov/api/v1/'
 endpoint = 'tas/categories/'
 headers = {'content-type': 'application/json'}
 payload = {
