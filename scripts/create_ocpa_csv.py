@@ -5,6 +5,7 @@ Symbol, Object Class, and Program Activity)
 TODO:
     Parameterize inputs such as environment and output file location
 """
+import click
 import json
 import logging
 import urllib.parse
@@ -66,30 +67,43 @@ def process_data(usa_response, df):
     return df
 
 
-# specify the endpoint and request body for the initial API call
-df = pd.DataFrame()
-env = 'https://api.usaspending.gov/api/v1/'
-endpoint = 'tas/categories/'
-headers = {'content-type': 'application/json'}
-payload = {
-    "limit": 500,
-    "fields": [
-        "object_class",
-        "program_activity",
-        "treasury_account",
-        "submission",
-        "obligations_incurred_by_program_object_class_cpe",
-        "ussgl480100_undelivered_orders_obligations_unpaid_fyb",
-        "gross_outlay_amount_by_program_object_class_cpe"]
-}
-# Make the first request
-r = request_data(
-    uri=urllib.parse.urljoin(env, endpoint),
-    data=json.dumps(payload),
-    headers=headers
-)
-# process the results of the API call (and any subsequent pages, if applicable)
-df = process_data(r, df)
+@click.command()
+@click.option('--path', default='./data/data_act_account_ocpa.csv', help='file path of resulting .csv')
+def create_ocpa_csv(path):
+    """Create a .csv of tas-based spending by object class and program activity
 
-# write the dataframe of results to a .csv file
-df.to_csv('./data/data_act_account_ocpa.csv', index=False)
+    Args:
+        path: path where the resulting .csv should be saved
+
+    """
+    # specify the endpoint and request body for the initial API call
+    df = pd.DataFrame()
+    env = 'https://api.usaspending.gov/api/v1/'
+    endpoint = 'tas/categories/'
+    headers = {'content-type': 'application/json'}
+    payload = {
+        "limit": 500,
+        "fields": [
+            "object_class",
+            "program_activity",
+            "treasury_account",
+            "submission",
+            "obligations_incurred_by_program_object_class_cpe",
+            "ussgl480100_undelivered_orders_obligations_unpaid_fyb",
+            "gross_outlay_amount_by_program_object_class_cpe"]
+    }
+    # Make the first request
+    r = request_data(
+        uri=urllib.parse.urljoin(env, endpoint),
+        data=json.dumps(payload),
+        headers=headers
+    )
+    # process the results of the API call (and any subsequent pages, if applicable)
+    df = process_data(r, df)
+
+    # write the dataframe of results to a .csv file
+    df.to_csv(path, index=False)
+
+
+if __name__ == '__main__':
+    create_ocpa_csv()
