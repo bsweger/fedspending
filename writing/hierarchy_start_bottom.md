@@ -125,12 +125,12 @@ air_merged[[
 ```
 The code above generates a dataset that looks like this (headers abbreviated for brevity):
 
-type | recipient name | recipient city | pgm actv code | pgm actv name | account title
-----   --------------   --------------   -------------   -------------   -------------
-Project Grant | CO Department of Public Health and Environment | DENVER | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen...
-Formula Grant | South Coast AQMD | DIAMOND BAR | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen...
-Project Grant | STATE OF OHIO OFFICE OF BUDGET AND MANAGEMENT | COLUMBUS | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen...
-Delivery Order | ICF INCORPORATED, L.L.C. | FAIRFAX	 | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen...
+| type | recipient name | recipient city | pgm actv code | pgm actv name | account title |
+| ---- | -------------- | -------------- | ------------- | ------------- | ------------- |
+| Project Grant | CO Department of Public Health and Environment | DENVER | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen... |
+| Formula Grant | South Coast AQMD | DIAMOND BAR | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen... |
+| Project Grant | STATE OF OHIO OFFICE OF BUDGET AND MANAGEMENT | COLUMBUS | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen... |
+| Delivery Order | ICF INCORPORATED, L.L.C. | FAIRFAX	 | 3004 | Categorical Grant:  State and Local Air Qualit... | State and Tribal Assistance Grants, Environmen... |
 
 
 ### Program Activity: but what does this tell us?
