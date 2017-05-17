@@ -1,4 +1,7 @@
-# U.S. Federal Spending Scripts
+# U.S. Federal Spending
+
+
+## About
 
 On May 2014, President Obama signed the Digital Accountability and Transparency Act of 2014 (DATA Act) ([P.L. 113-101](https://www.gpo.gov/fdsys/pkg/PLAW-113publ101/pdf/PLAW-113publ101.pdf)) into law. As a result, U.S. federal agencies have started to report standardized data about their spending to the U.S. Department of the Treasury. This standardized data is surfaced via a beta API and a beta version of USAspending.gov
 
@@ -7,18 +10,22 @@ capacity (_i.e._, unrelated to official government work). I'm a taxpayer eager t
 
 Everything here is obtainable via publicly-available resources.
 
-## Setup Instructions (WIP)
 
-### Show me the data
+## Writing
+
+* [Connecting a grant or contract to its accounting/appropriation fund information](writing/hierarchy_start_bottom.md "Federal spending hierarchy: starting at the bottom")
+
+## Data
 
 If you want to view the projects' data without running the scripts that create it:
 
-1. The output .csv files are in the `data` folder.
-2. Coming soon? A Jupyter notebook or two?
+* [FY 2017 Q2 obligations and outlays by account, program activity, and object class](data/data_act_account_ocpa.csv "FY2017 Q2 by account, program activity, object class")
 
-### Run the scripts
 
-If you want to stand up a local Python development environment to run the scripts yourself:
+## Setup Instructions (WIP)
+
+If you want to set up your own Python environment to run any of the scripts in this repo, follow the instructions below.
+
 
 1. Install the [miniconda Python package manager](http://conda.pydata.org/miniconda.html)
 
