@@ -13,7 +13,7 @@ Everything here is obtainable via publicly-available resources.
 
 ## Writing
 
-* [Connecting a grant or contract to its accounting/appropriation fund information](writing/hierarchy_start_bottom.md "Federal spending hierarchy: starting at the bottom")
+* [Connecting a grant or contract to its accounting/appropriation fund information](writing/hierarchy_start_bottom.md)
 
 ## Data
 
