@@ -8,7 +8,7 @@ On May 9, 2017, the U.S. Department of the Treasury released the first batch of 
 This is what you might call a BFD.
 
 
-<img style="float: left;" alt="data!" src="https://media.giphy.com/media/msKNSs8rmJ5m/giphy.gif"/>
+<img style="text-align: left;" alt="data!" src="https://media.giphy.com/media/msKNSs8rmJ5m/giphy.gif"/>
 
 
 ## TL;DR
@@ -47,7 +47,7 @@ Interesting! But not new. We can [see this type of information on the legacy usa
 
 Also! Awards data comes from the day-do-day systems that agencies use to manage their contracts, grants, loans, etc. **It does not represent data from an audited financial system.**
 
-<img style="float: left;" alt="data!" src="https://media.giphy.com/media/33iqmp5ATXT5m/giphy.gif"/>
+<img style="text-align: left;" alt="data!" src="https://media.giphy.com/media/33iqmp5ATXT5m/giphy.gif"/>
 
 
 ## Going up the hierarchy
@@ -60,7 +60,7 @@ Notice this sentence: _It comes directly from the audited financial systems of f
 
 Now we see can see that the reported $1,000,000 grant amount matches the $1,000,000 amount being reported by the EPA's audited financial system.
 
-<img style="float: left;" alt="data!" src="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif"/>
+<img style="text-align: left;" alt="data!" src="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif"/>
 
 
 ## Program Activity and Object Class
@@ -215,4 +215,4 @@ Some people will use this information to better understand how our tax dollars f
 
 Whatever your angle, May 9, 2017 saw a huge step forward.
 
-<img style="float: left;" alt="data!" src="https://media.giphy.com/media/65kQC6Mg4XIsw/giphy.gif"/>
+<img style="text-align: left;" alt="data!" src="https://media.giphy.com/media/65kQC6Mg4XIsw/giphy.gif"/>
