@@ -19,7 +19,8 @@ Everything here is obtainable via publicly-available resources.
 
 If you want to view the projects' data without running the scripts that create it:
 
-* [FY 2017 Q2 obligations and outlays by account, program activity, and object class](data/data_act_account_ocpa.csv "FY2017 Q2 by account, program activity, object class")
+* [FY 2017 obligations and outlays by account, program activity, and object class (as of the end of Q2)](data/data_act_account_ocpa.csv "FY2017 Q2 by account, program activity, object class")
+* [FY 2017 account balances (as of the end of Q2)](data/data_act_account_balances.csv "FY 2017 account balances")
 
 
 ## Setup Instructions (WIP)
