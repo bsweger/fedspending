@@ -39,7 +39,7 @@ Other parts were available in bits and pieces but weren't public, searchable, an
 
 Nothing against awards data. It's useful. Awards describe grants, contracts, and loans. This category of federal spending also includes information about payments the U.S. government makes on behalf of individuals, like Social Security and Medicare payments. Awards are a terrific way to understand how our collective tax dollars flow back into our communities.
 
-For example, [here's a grant](https://beta.usaspending.gov/#/award/982394) that Philadelphia, PA received from the Environmental Protection Agency to _provide assistance to the City of Philadelphia in its efforts to implement air pollution control programs_.
+For example, [here's a grant](https://beta.usaspending.gov/#/award/642199) that Philadelphia, PA received from the Environmental Protection Agency to _provide assistance to the City of Philadelphia in its efforts to implement air pollution control programs_.
 
 ![Philly EPA air pollution control grant](img/philly-epa-grant.png "Philly EPA air pollution control grant")
 
@@ -78,7 +78,7 @@ This is already more information than we could have extracted from the current u
 
 ### Program Activity: a brief technical aside
 
-Beta.usaspending.gov is in...beta. Thus, there's currently no easy way to look up everything related to a specific program activity. (hint: there's [community forum](https://usaspending-help.zendesk.com/hc/en-us/community/topics "beta.usaspending.gov community forum") where you can do your patriotic duty by suggesting improvements and features).
+Beta.usaspending.gov is in...beta. Thus, there's currently no easy way to look up everything related to a specific program activity. (hint: there's a [community forum](https://usaspending-help.zendesk.com/hc/en-us/community/topics "beta.usaspending.gov community forum") where you can do your patriotic duty by suggesting improvements and features).
 
 That said, you can get geeky and use the [USAspending API](https://api.usaspending.gov/) to follow the trail. The API (application programming interface) is the behind-the-scenes way that the website retrieves data. Luckily, the API not only powers the website: it's also available for the public to query.
 
@@ -135,7 +135,7 @@ The code above generates a dataset that looks like this (headers abbreviated for
 
 ### Program Activity: but what does this tell us?
 
-We've now followed a single award up the federal spending chain to get a list of other awards that are funded from that same `State and Local Air Quality` program. Some of these awards are grants, similar to the one that went to Philly. Others are contracts that appear to be program-related services like [air monitoring equipment](https://beta.usaspending.gov/#/award/984045) and [databases](https://beta.usaspending.gov/#/award/983715).
+We've now followed a single award up the federal spending chain to get a list of other awards that are funded from that same `State and Local Air Quality` program. Some of these awards are grants, similar to the one that went to Philly. Others are contracts that appear to be program-related services like air monitoring equipment and databases.
 
 We had to dig into the API to do this, but I suspect the website itself will eventually support this type of sleuthing (the team releases new features bi-weekly).
 
@@ -169,7 +169,7 @@ It's not immediately obvious, but the search results page lets you jump right to
 
 ![spending-by-federal-accounts](img/spending-by-federal-accounts.png "spending-by-federal-accounts")
 
-In this case, you'll only see one account, because we only searched for one. What you want is that hyperlink on the y axis: https://beta.usaspending.gov/#/federal_account/1752
+In this case, you'll only see one account, because we only searched for one. What you want is that hyperlink on the y axis: [https://beta.usaspending.gov/#/federal_account/1574](https://beta.usaspending.gov/#/federal_account/1574).
 
 Click it for a high-level view of activity for the entire account: not just awards spending.
 
