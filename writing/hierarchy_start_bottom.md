@@ -150,36 +150,23 @@ But again, _awards_ spending is only part of the picture. Presumably there are o
 
 Loosely speaking, a federal account represents a high-level grouping of specific, related Treasury accounts. Simplistically, you can think of Treasury accounts as funds that correspond to Congress authorizations to spend money for specific purposes.
 
-### Search for an account
-
-In the table of air quality grants that we got from the API, you can see that all of them are associated with a federal account titled `State and Tribal Assistance Grants, Environmental Protection Agency`.
-
-Now that we know this title, we can look it up on the [search page of beta.usaspending.api](https://beta.usaspending.gov/#/search "USAspending search").
-
-![federal account search](img/usaspending-search-epa-account.png "federal account search")
-
-The result of that search will be a view of the money obligated for of this specific account: $369,943,892, for fiscal year 2017 to date.
-
-(An _obligation_ means that money has been set aside for a designated purpose, to be paid later.)
-
 
 ### View an account
 
-It's not immediately obvious, but the search results page lets you jump right to the _Federal Accounts_ level of the spending hiearchy. Look for the _Spending by Budget Category_ chart and choose the _Federal Accounts_ view to see spending by federal account.
+An award's federal account is listed in the _Financial System Details_ table (_i.e._, the same table that shows the object class and program activity).
 
-![spending-by-federal-accounts](img/spending-by-federal-accounts.png "spending-by-federal-accounts")
+![federal account name](img/federal-account-link.png "federal account view")
 
-In this case, you'll only see one account, because we only searched for one. What you want is that hyperlink on the y axis: [https://beta.usaspending.gov/#/federal_account/1574](https://beta.usaspending.gov/#/federal_account/1574).
-
-Click it for a high-level view of activity for the entire account: not just awards spending.
-
-![federal account view](img/federal-account-view.png "federal account view")
+Click on that account name to see a high-level view of its activity. In this case, the link goes to [https://beta.usaspending.gov/#/federal_account/1574](https://beta.usaspending.gov/#/federal_account/1574).
 
 You're now looking at the _Federal Account Summary_ page, which displays the details of an individual federal account:
 
 * balances for the current fiscal year
 * spend by program activity and object class
 * individual awards that have been funded from the account
+
+![federal account view](img/federal-account-view.png "federal account view")
+
 
 ### Filter an account
 
@@ -204,7 +191,7 @@ You can switch up the filters on the left-hand side of the screen to explore the
 
 Many of us view federal spending solely from the perspective of award data, because it's all we've had access to in a convenient, machine-readable format.
 
-Before the DATA Act, the only thing we could see was the $1,000,000 grant to City of Philadelphia. Post-DATA Act, we have the context that federal spending nerds have dreamed of for decades:
+Before the DATA Act, the only thing we could see was the $1,000,000 grant to City of Philadelphia. Post-DATA Act, we have the context that federal spending nerds have dreamed of for decades. As of May, 2017:
 
 * So far in fiscal year 2017, we've obligated $20.4 billion within the `Natural Resources` budget function
 * Of that, 2% ($397 million) has been obligated within the  `State and Tribal Assistance Grants, Environmental Protection Agency` federal account
