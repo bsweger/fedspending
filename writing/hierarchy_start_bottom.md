@@ -187,7 +187,7 @@ Back to our original EPA air quality award to Philadelphia and the `State and Tr
 
 The _Federal Account Summary_ page lets you drill into a federal account by any combination of program activity codes and object classes. Thus, to better understand the **overall** spending for `State and Tribal Assistance Grants, Environmental Protection Agency` (not just grants), you would:
 
-1. Filter by the `State and Tribal Assistance Grants, Environmental Protection Agency` program activity (left-hand side of the screen)
+1. Filter by the `Categorial Grant: State and Local Air Quality Management` program activity (left-hand side of the screen)
 2. Switch the _Spending by Category_ graph to the _Object Class_ view
 
 Now you have the high-level categories of spending for this program.
