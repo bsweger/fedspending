@@ -39,7 +39,7 @@ Other parts were available in bits and pieces but weren't public, searchable, an
 
 Nothing against awards data. It's useful. Awards describe grants, contracts, and loans. This category of federal spending also includes information about payments the U.S. government makes on behalf of individuals, like Social Security and Medicare payments. Awards are a terrific way to understand how our collective tax dollars flow back into our communities.
 
-For example, [here's a grant](https://beta.usaspending.gov/#/award/982394) that Philadelphia, PA received from the Environmental Protection Agency to _provide assistance to the City of Philadelphia in its efforts to implement air pollution control programs_.
+For example, [here's a grant](https://beta.usaspending.gov/#/award/642199) that Philadelphia, PA received from the Environmental Protection Agency to _provide assistance to the City of Philadelphia in its efforts to implement air pollution control programs_.
 
 ![Philly EPA air pollution control grant](img/philly-epa-grant.png "Philly EPA air pollution control grant")
 
@@ -78,7 +78,7 @@ This is already more information than we could have extracted from the current u
 
 ### Program Activity: a brief technical aside
 
-Beta.usaspending.gov is in...beta. Thus, there's currently no easy way to look up everything related to a specific program activity. (hint: there's [community forum](https://usaspending-help.zendesk.com/hc/en-us/community/topics "beta.usaspending.gov community forum") where you can do your patriotic duty by suggesting improvements and features).
+Beta.usaspending.gov is in...beta. Thus, there's currently no easy way to look up everything related to a specific program activity. (hint: there's a [community forum](https://usaspending-help.zendesk.com/hc/en-us/community/topics "beta.usaspending.gov community forum") where you can do your patriotic duty by suggesting improvements and features).
 
 That said, you can get geeky and use the [USAspending API](https://api.usaspending.gov/) to follow the trail. The API (application programming interface) is the behind-the-scenes way that the website retrieves data. Luckily, the API not only powers the website: it's also available for the public to query.
 
@@ -135,7 +135,7 @@ The code above generates a dataset that looks like this (headers abbreviated for
 
 ### Program Activity: but what does this tell us?
 
-We've now followed a single award up the federal spending chain to get a list of other awards that are funded from that same `State and Local Air Quality` program. Some of these awards are grants, similar to the one that went to Philly. Others are contracts that appear to be program-related services like [air monitoring equipment](https://beta.usaspending.gov/#/award/984045) and [databases](https://beta.usaspending.gov/#/award/983715).
+We've now followed a single award up the federal spending chain to get a list of other awards that are funded from that same `State and Local Air Quality` program. Some of these awards are grants, similar to the one that went to Philly. Others are contracts that appear to be program-related services like air monitoring equipment and databases.
 
 We had to dig into the API to do this, but I suspect the website itself will eventually support this type of sleuthing (the team releases new features bi-weekly).
 
@@ -150,30 +150,14 @@ But again, _awards_ spending is only part of the picture. Presumably there are o
 
 Loosely speaking, a federal account represents a high-level grouping of specific, related Treasury accounts. Simplistically, you can think of Treasury accounts as funds that correspond to Congress authorizations to spend money for specific purposes.
 
-### Search for an account
-
-In the table of air quality grants that we got from the API, you can see that all of them are associated with a federal account titled `State and Tribal Assistance Grants, Environmental Protection Agency`.
-
-Now that we know this title, we can look it up on the [search page of beta.usaspending.api](https://beta.usaspending.gov/#/search "USAspending search").
-
-![federal account search](img/usaspending-search-epa-account.png "federal account search")
-
-The result of that search will be a view of the money obligated for of this specific account: $369,943,892, for fiscal year 2017 to date.
-
-(An _obligation_ means that money has been set aside for a designated purpose, to be paid later.)
-
 
 ### View an account
 
-It's not immediately obvious, but the search results page lets you jump right to the _Federal Accounts_ level of the spending hiearchy. Look for the _Spending by Budget Category_ chart and choose the _Federal Accounts_ view to see spending by federal account.
+An award's federal account is listed in the _Financial System Details_ table (_i.e._, the same table that shows the object class and program activity).
 
-![spending-by-federal-accounts](img/spending-by-federal-accounts.png "spending-by-federal-accounts")
+![federal account name](img/federal-account-link.png "federal account view")
 
-In this case, you'll only see one account, because we only searched for one. What you want is that hyperlink on the y axis: https://beta.usaspending.gov/#/federal_account/1752
-
-Click it for a high-level view of activity for the entire account: not just awards spending.
-
-![federal account view](img/federal-account-view.png "federal account view")
+Click on that account name to see a high-level view of its activity. In this case, the link goes to [https://beta.usaspending.gov/#/federal_account/1574](https://beta.usaspending.gov/#/federal_account/1574).
 
 You're now looking at the _Federal Account Summary_ page, which displays the details of an individual federal account:
 
@@ -181,13 +165,16 @@ You're now looking at the _Federal Account Summary_ page, which displays the det
 * spend by program activity and object class
 * individual awards that have been funded from the account
 
+![federal account view](img/federal-account-view.png "federal account view")
+
+
 ### Filter an account
 
 Back to our original EPA air quality award to Philadelphia and the `State and Tribal Assistance Grants, Environmental Protection Agency` program that funds it.
 
 The _Federal Account Summary_ page lets you drill into a federal account by any combination of program activity codes and object classes. Thus, to better understand the **overall** spending for `State and Tribal Assistance Grants, Environmental Protection Agency` (not just grants), you would:
 
-1. Filter by the `State and Tribal Assistance Grants, Environmental Protection Agency` program activity (left-hand side of the screen)
+1. Filter by the `Categorial Grant: State and Local Air Quality Management` program activity (left-hand side of the screen)
 2. Switch the _Spending by Category_ graph to the _Object Class_ view
 
 Now you have the high-level categories of spending for this program.
@@ -204,7 +191,7 @@ You can switch up the filters on the left-hand side of the screen to explore the
 
 Many of us view federal spending solely from the perspective of award data, because it's all we've had access to in a convenient, machine-readable format.
 
-Before the DATA Act, the only thing we could see was the $1,000,000 grant to City of Philadelphia. Post-DATA Act, we have the context that federal spending nerds have dreamed of for decades:
+Before the DATA Act, the only thing we could see was the $1,000,000 grant to City of Philadelphia. Post-DATA Act, we have the context that federal spending nerds have dreamed of for decades. As of May, 2017:
 
 * So far in fiscal year 2017, we've obligated $20.4 billion within the `Natural Resources` budget function
 * Of that, 2% ($397 million) has been obligated within the  `State and Tribal Assistance Grants, Environmental Protection Agency` federal account
